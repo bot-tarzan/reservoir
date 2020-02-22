@@ -1,14 +1,14 @@
 package com.bothub.reservoir.biz.lark.view;
 
-import java.util.Date;
 import lombok.Data;
 
 @Data
 public class LarkCallback {
+
   private String challenge;
   private String uuid;
   private String token;
-  private Date ts;
+  private String ts;
   private String type;
   private Object event;
 //  {
