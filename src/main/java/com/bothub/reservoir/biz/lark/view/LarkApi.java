@@ -34,7 +34,7 @@ public class LarkApi {
     this.pool = new ArrayBlockingQueue<>(2000);
   }
 
-  @PostMapping("{robot}/callback/")
+  @PostMapping("{robot}/callback")
   public Object callback(@RequestBody LarkCallback callback) throws JsonProcessingException {
     if (callback.getType().equals("url_verification")) {
       Map<String, String> map = new HashMap<>();
