@@ -4,7 +4,7 @@ git pull origin master
 
 echo "start process"
 
-mvn clean package -Dmaven.test.skip=true
+mvn -q clean package -Dmaven.test.skip=true
 echo "package done"
 
 
